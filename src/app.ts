@@ -1,22 +1,32 @@
-import express, { Application, Request, Response } from 'express'
-import cors from 'cors'
-import userRouter from './app/modules/users/users.route'
+import express, { Application, Request, Response } from 'express';
+import cors from 'cors';
+import globalErrorHandler from './app/middlewares/globalErrorHandlers';
+import { UserRoutes } from './app/modules/user/user.route';
+import ApiError from './app/errors/ApiError';
+import { SemesterRoutes } from './app/modules/academicSemester/academicSemester.route';
 
-const app: Application = express()
+const app: Application = express();
 // const port = 3000;
 
-app.use(cors())
+app.use(cors());
 
 //parser
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Application routes
-app.use('/api/v1/users/', userRouter)
+app.use('/api/v1/users/', UserRoutes.router);
+app.use('/api/v1/academic-semester', SemesterRoutes);
 
 //Testing
-app.get('/', async (req: Request, res: Response) => {
-  res.send('Hello World!')
-})
+app.get('/', (req: Request, res: Response) => {
+  res.send('Hello World!');
+  throw new ApiError(400, 'ORe baba');
+  // throw new Error('Testing Error logger')
+  // next("ORe Baba Error")//error
+});
 
-export default app
+//Global Error Handler
+app.use(globalErrorHandler);
+
+export default app;

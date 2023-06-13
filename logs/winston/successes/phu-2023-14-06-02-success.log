@@ -1,0 +1,84 @@
+{
+  message: 'Database connection successfully',
+  level: 'info',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-13T20:01:20.623Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-13T20:01:20.648Z'
+}
+{
+  message: 'Database connection successfully',
+  level: 'info',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-13T20:01:59.732Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-13T20:01:59.748Z'
+}
+{
+  message: 'Database connection successfully',
+  level: 'info',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-13T20:02:26.786Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-13T20:02:26.803Z'
+}
+{
+  message: 'Database connection successfully',
+  level: 'info',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-13T20:02:33.376Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-13T20:02:33.394Z'
+}
+{
+  message: 'Database connection successfully',
+  level: 'info',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-13T20:03:08.496Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-13T20:03:08.511Z'
+}
+{
+  message: 'Database connection successfully',
+  level: 'info',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-13T20:03:26.627Z'
+}
+{
+  message: 'Application listening on port 5000',
+  level: 'info',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-13T20:03:26.645Z'
+}
