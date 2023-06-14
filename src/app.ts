@@ -1,9 +1,9 @@
 import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
 import globalErrorHandler from './app/middlewares/globalErrorHandlers';
-import { UserRoutes } from './app/modules/user/user.route';
 import ApiError from './app/errors/ApiError';
-import { SemesterRoutes } from './app/modules/academicSemester/academicSemester.route';
+
+import router from './app/routes';
 
 const app: Application = express();
 // const port = 3000;
@@ -14,9 +14,10 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Application routes
-app.use('/api/v1/users/', UserRoutes.router);
-app.use('/api/v1/academic-semester', SemesterRoutes);
+//-------------- Application routes--------------------------!>
+// app.use('/api/v1/users/', UserRoutes.router);
+// app.use('/api/v1/academic-semester', SemesterRoutes);
+app.use('/api/v1/', router);
 
 //Testing
 app.get('/', (req: Request, res: Response) => {
