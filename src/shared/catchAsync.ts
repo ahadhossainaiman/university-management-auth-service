@@ -7,7 +7,7 @@ const catchAsync = (fn: RequestHandler) => {
     next: NextFunction
   ): Promise<void> => {
     try {
-      await fn(req, res, next);
+      fn(req, res, next);
     } catch (error) {
       next(error);
     }

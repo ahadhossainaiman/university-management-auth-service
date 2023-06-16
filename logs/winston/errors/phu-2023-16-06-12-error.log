@@ -1,0 +1,56 @@
+{
+  statusCode: 400,
+  level: 'error',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-16T06:39:38.493Z'
+}
+{
+  statusCode: 400,
+  level: 'error',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-16T06:40:39.643Z'
+}
+{
+  statusCode: 400,
+  level: 'error',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-16T06:43:38.653Z'
+}
+{
+  statusCode: 400,
+  level: 'error',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-16T06:45:46.168Z'
+}
+{
+  statusCode: 400,
+  level: 'error',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-16T06:46:59.711Z'
+}
+{
+  statusCode: 400,
+  level: 'error',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-16T06:47:55.330Z'
+}
+{
+  statusCode: 400,
+  level: 'error',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-16T06:50:08.981Z'
+}
+{
+  statusCode: 400,
+  level: 'error',
+  service: 'user-service',
+  label: 'PHU',
+  timestamp: '2023-06-16T06:55:19.992Z'
+}

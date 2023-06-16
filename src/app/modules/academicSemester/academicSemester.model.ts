@@ -20,7 +20,7 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
     },
 
     year: {
-      type: Number,
+      type: String,
       required: true,
     },
     code: {
@@ -42,6 +42,9 @@ const academicSemesterSchema = new Schema<IAcademicSemester>(
 
   {
     timestamps: true,
+    toJSON: {
+      virtual: true,
+    },
   }
 );
 
